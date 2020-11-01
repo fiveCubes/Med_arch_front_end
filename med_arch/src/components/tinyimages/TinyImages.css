@@ -1,0 +1,33 @@
+/* #tiny-images{
+    display:flex;
+    flex-direction:column;
+    border:solid;
+    margin:10%;
+
+ 
+}
+*/
+
+.tiny-1{
+  width:100%;
+  padding:10%;
+  
+    
+} 
+
+.tiny-1:hover{
+    border:solid;
+}  
+
+
+#tiny-images{
+    display:inline-flex;
+    flex-direction:column;
+    width:50%;
+    margin:2%;
+
+}
+
+
+
+

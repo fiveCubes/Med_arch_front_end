@@ -1,0 +1,68 @@
+
+/*
+
+image_item_container is where the main image and tiny image are added. 
+item 1 is the tiny image and item 2 is the main image. 
+they occupy 50% of screensize 
+
+
+data container is where the descriptions are added;
+
+entire box is the flex box containing image_container and data_container
+
+
+*/
+
+  #image_item_container{
+      width:50%;
+      display:inline-flex;
+      position:fixed;
+  }
+
+  #item1{
+     
+      width:20%;
+  }
+  #item2{
+     
+      width:80%;
+      padding-left:10%;
+      padding-right:10%;
+  }
+
+  #data_container{
+      width:50%;
+      display:inline-flex;
+      margin-left:50%;  /*added to avoid overlapping with the fixed image */
+  }
+
+  #main_image{
+      width:75%;
+
+  }
+
+  #entire-box{
+      display:flex;
+      margin-left:5%;
+      margin-right:5%;
+      margin-top:2%;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    #image_item_container{
+        width:100%;
+        display:inline-flex;
+        position:relative;
+    }
+    #data_container{
+        width:100%;
+        display:inline-flex;
+        padding:2%;
+        margin:0;
+    }
+    #entire-box{
+        display:block;
+        margin:3%;
+    }
+  } 
